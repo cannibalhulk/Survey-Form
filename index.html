@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>SurveyPanda</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/thumbnails/000/599/203/small/28012019-05.jpg">
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Student Satisfiability Survey</h1>
+    <p id="description">Give your feedback to Columbia University</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">
+              Name:<input type="name" placeholder="Enter your full name" id="name" required></label>
+            <label id="email-label">
+              Email:<input type="email" placeholder="Enter your school email" id="email" required></label>
+            <label id="number-label">
+              Age:<input type="number" placeholder="Enter your age" id="number" min="14" max="90" required></label>
+        </fieldset>
+            
+        <fieldset>
+            <label>
+                1) Which Department Are You Studying In?
+                <select name="subject" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="c">Anthropology</option>
+                    <option value="c++">Accounting Devision Dep.</option>
+                    <option value="java">Architecture</option>
+                    <option value="c#">Biomedical Informatics Dep.</option>
+                    <option value="java">Chemistry Dep.</option>
+                    <option value="javascript">Chemical Engineering Dep.</option>
+                    <option value="python">Computer Science</option>
+                    <option value="ruby">Environmental Sciences Department</option>
+                    <option value="c++">Geography</option>
+                    <option value="c#">History</option>
+                    <option value="c#">Mathematics</option>
+                    <option value="c#">Physics</option>
+                    <option value="c#">Psychology</option>
+                    <option value="c#">Sociology</option>
+                    <option value="c#">Statistics</option>
+                    <option value="c#">Urban Studies</option>
+                    <option value="c#">Zoology</option>
+                    <option value="c#">Other</option>
+                </select>
+            </label>
+            <label >Other:<input  type="text" id="other" placeholder="Enter Other Department, if applicable"></label> 
+            
+        </fieldset>
+          
+        <fieldset>
+          <h4 id="question-2">2) Select Your Degree</h4>
+            <label>
+              <input id="radiobtn" type="radio" name="degree" value="bachelor">   Bachelor's Degree (BA,BSc,BEng etc.)
+            </label>
+            <label><input  id="radiobtn" type="radio" name="degree" value="master">  Master's Degree (MA,MSc etc.)</label>
+            <label><input id="radiobtn" type="radio" name="degree" value="phd">  Doctoral degree-Ph.D</label>
+            <label><input id="radiobtn" type="radio" name="degree" value="other">  Associate's Degree</label>
+        </fieldset>
+        <fieldset>
+          <label id="question-3">3) What's the best feature which you like most in the university?</label>
+          <label >(Please check all that apply)</label>
+          <label><input id="checkbox" type="checkbox" value="bell">Bell Sound </label>
+          <label><input id="checkbox" type="checkbox" value="Quality Education">Quality Education </label>
+          <label><input id="checkbox" type="checkbox" value="Friendly Staff">Friendly Staff </label>
+          <label><input id="checkbox" type="checkbox" value="Friendly Environment">Friendly Environment </label>
+          <label><input id="checkbox" type="checkbox" value="Other">Other </label>
+          
+        </fieldset>
+        <fieldset>
+          <label>4) Write Your Likes and Dislikes about the university:</label>
+            <textarea id="more info" rows="5" cols="30" placeholder="I like (smth) because..."></textarea>
+        </label>
+        </fieldset>
+        <input class="submit" id="submit" type="submit" value="Submit">
+    </form>
+    
+  </body>
+  <footer>
+    <h5>New York</h5>
+  </footer>
+</html>
